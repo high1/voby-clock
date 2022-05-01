@@ -1,26 +1,8 @@
 
 /* IMPORT */
 import {$, For, useCleanup, useComputed, useInterval, Observable} from 'voby';
-
-const Lines = ({ numberOfLines, lineClass, lineLength, lineWidth }: { numberOfLines: number, lineClass: string, lineLength: number, lineWidth: number }) => (
-  <For values={Array.from({ length: numberOfLines }, (_, index) => index)}>
-    {(index) => <Hand rotate={lineRotate(index, numberOfLines)} handClass={lineClass} handLength={lineLength} handWidth={lineWidth} fixed />}
-  </For>
-);
-
-const Hand = ({rotate, handClass, handLength, handWidth, fixed}: { rotate: Observable<string> | string, handClass: string, handLength: number, handWidth: number, fixed?: boolean}) => (
-  <line
-    class={handClass}
-    x1={100}
-    y1={fixed ? 195 - handLength : 100}
-    x2={100 - (fixed ? 0 : handLength)}
-    y2={fixed ? 195 : 100}
-    stroke="currentColor"
-    stroke-width={`${handWidth}`}
-    stroke-linecap="round"
-    transform={rotate}
-  />
-);
+import { Hand } from 'Hand';
+import { Lines } from 'Lines';
 
 const miliseconds = (date: Date) => ((date.getHours() * 60 + date.getMinutes()) * 60 + date.getSeconds()) * 1000 + date.getMilliseconds();
 const subsecond = (date: Date) => ((miliseconds(date) / 1000)) * 360;
@@ -28,8 +10,6 @@ const second = (date: Date) => ((miliseconds(date) / 1000) % 60) * 360 / 60;
 const minute = (date: Date) => ((miliseconds(date) / 1000 / 60) % 60) * 360 / 60;
 const hour = (date: Date) => ((miliseconds(date) / 1000 / 60 / 60) % 12) * 360 / 12;
 const rotate = (rotate: number) => `rotate(${Math.round((rotate + 90) * 10) / 10} 100 100)`;
-const lineRotate = (index: number, length: number) => `rotate(${(360 * index) / length} 100 100)`
-
 
 const ClockFace = (): JSX.Element => {
   const date = $(new Date ());
