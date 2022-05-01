@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "type": "module",
+  "name": "voby-demo-clock",
+  "version": "1.0.0",
+  "keywords": [],
+  "description": "voby clock, inspired by sauron clock",
+  "dependencies": {
+    "voby": "^0.17.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4",
+    "unocss": "^0.32.8",
+    "vite": "^2.9.6",
+    "vite-tsconfig-paths": "^3.4.1"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "start": "vite"
+  },
+  "packageManager": "pnpm@6.32.11"
+}
