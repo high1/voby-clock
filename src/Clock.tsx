@@ -1,6 +1,6 @@
 
 /* IMPORT */
-import {$, For, useCleanup, useComputed, useInterval, Observable} from 'voby';
+import {$, useCleanup, useComputed, useInterval} from 'voby';
 import { Hand } from 'Hand';
 import { Lines } from 'Lines';
 
@@ -48,9 +48,7 @@ const ClockFace = (): JSX.Element => {
 
 export const Clock = (): JSX.Element => (
 <div class="flex flex-wrap items-center justify-center h-full">
-  <For values={Array.from({ length: 276 }, (_, index) => index)}>
-    {() => <ClockFace />}
-  </For>
+  {Array.from({ length: 276 }).map(() => <ClockFace />)}
 </div>
 );
 

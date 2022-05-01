@@ -6,8 +6,6 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "jsx": "preserve",
-    // "jsxFactory": "$$h",
-    // "jsxImportSource": "voby",
     "types": ["vite/client"],
     "noEmit": true,
     "isolatedModules": true,

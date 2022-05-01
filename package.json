@@ -19,5 +19,5 @@
     "dev": "vite",
     "start": "vite"
   },
-  "packageManager": "pnpm@6.32.11"
+  "packageManager": "pnpm@7.0.0"
 }

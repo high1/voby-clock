@@ -782,7 +782,7 @@ packages:
       destr: 1.1.1
       node-fetch: 3.2.4
       ufo: 0.8.3
-      undici: 5.0.0
+      undici: 5.1.0
     dev: true
 
   /onetime/5.1.2:
@@ -991,8 +991,8 @@ packages:
       jiti: 1.13.0
     dev: true
 
-  /undici/5.0.0:
-    resolution: {integrity: sha512-VhUpiZ3No1DOPPQVQnsDZyfcbTTcHdcgWej1PdFnSvOeJmOVDgiOHkunJmBLfmjt4CqgPQddPVjSWW0dsTs5Yg==}
+  /undici/5.1.0:
+    resolution: {integrity: sha512-S+Vy6GGLHmW0uNLyCOpma6qCEoX6Pw/Mga34UFeqNaMnfDMgeJhPdHwb9FDPC/gWnNhLxhE9Lis6yBDHtcJCqw==}
     engines: {node: '>=12.18'}
     dev: true
 
