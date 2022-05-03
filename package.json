@@ -6,12 +6,12 @@
   "keywords": [],
   "description": "voby clock, inspired by sauron clock",
   "dependencies": {
-    "voby": "^0.17.0"
+    "voby": "^0.18.0"
   },
   "devDependencies": {
     "typescript": "^4.6.4",
-    "unocss": "^0.32.8",
-    "vite": "^2.9.6",
+    "unocss": "^0.32.9",
+    "vite": "^2.9.7",
     "vite-tsconfig-paths": "^3.4.1"
   },
   "scripts": {

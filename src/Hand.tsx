@@ -1,6 +1,6 @@
-import type { Observable } from "voby";
+import type { FunctionMaybe } from "voby";
 
-type HandProps = { rotate: Observable<string> | string, handClass: string, handLength: number, handWidth: number, fixed?: boolean};
+type HandProps = { rotate: FunctionMaybe<string>, handClass: string, handLength: number, handWidth: number, fixed?: boolean};
 
 export const Hand = ({rotate, handClass, handLength, handWidth, fixed}: HandProps): JSX.Element => (
   <line
