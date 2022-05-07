@@ -1,4 +1,4 @@
-import 'virtual:uno.css';
+import 'uno.css';
 import { render } from 'voby';
 import { Clock } from 'Clock';
 
