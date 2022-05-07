@@ -4,5 +4,9 @@ import uno from 'unocss/vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
-    plugins: [voby(), uno(), tsconfigPaths()],
+  plugins: [
+    voby(),
+    uno(),
+    tsconfigPaths(),
+  ],
 });

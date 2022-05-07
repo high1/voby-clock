@@ -1,54 +1,53 @@
 
 /* IMPORT */
-import {$, ObservableReadonly, useCleanup, useInterval} from 'voby';
+import {$, FunctionMaybe, useAnimationLoop, useCleanup} from 'voby';
 import { Hand } from 'Hand';
 import { Lines } from 'Lines';
 
-const miliseconds = (date: Date) => ((date.getHours() * 60 + date.getMinutes()) * 60 + date.getSeconds()) * 1000 + date.getMilliseconds();
-const subsecond = (date: Date) => ((miliseconds(date) / 1000)) * 360;
-const second = (date: Date) => ((miliseconds(date) / 1000) % 60) * 360 / 60;
-const minute = (date: Date) => ((miliseconds(date) / 1000 / 60) % 60) * 360 / 60;
-const hour = (date: Date) => ((miliseconds(date) / 1000 / 60 / 60) % 12) * 360 / 12;
-const rotate = (rotate: number) => `rotate(${Math.round((rotate + 90) * 10) / 10} 100 100)`;
+const getSecondsSinceMidnight = (): number => (Date.now() - new Date().setHours(0, 0, 0, 0)) / 1000;
+const subsecond = (time: number) =>  time % 1;
+const second = (time: number) => time % 60 / 60;
+const minute = (time: number) => time / 60 % 60 / 60;
+const hour = (time: number) => time / 60 / 60 % 12 / 12;
+const rotate = (rotate: number, fixed: number = 1) => `rotate(${(rotate * 360).toFixed(fixed)} 100 100)`;
 
 type ClockFaceProps = {
-  hour: () => string;
-  minute: () => string;
-  second: () => string;
-  subsecond: () => string;
+  hour: FunctionMaybe<string>;
+  minute: FunctionMaybe<string>;
+  second: FunctionMaybe<string>;
+  subsecond: FunctionMaybe<string>;
 }
 
-const ClockFace = ({ hour, minute, second, subsecond }: ClockFaceProps): JSX.Element => (
-  <svg viewBox="0 0 200 200" width="82">
+export const ClockFace = ({ hour, minute, second, subsecond }: ClockFaceProps): JSX.Element => (
+  <svg viewBox="0 0 200 200" width="600">
     {/* static */}
-    <circle className="text-neutral-900" cx="100" cy="100" r="98" fill="none" stroke="currentColor" />
-    <circle class="text-neutral-900" cx="100" cy="100" r="98" fill="none" stroke="currentColor" />
-    <Lines numberOfLines={60} lineClass='text-cyan-500' lineLength={5} lineWidth={1} />
-    <Lines numberOfLines={12} lineClass='text-emerald-500' lineLength={15} lineWidth={2} />
+    <circle class="text-neutral-900" cx="100" cy="100" r="99" fill="transparent" stroke="currentColor"/>
+    <Lines numberOfLines={60} class='text-neutral-400' length={2} width={1} />
+    <Lines numberOfLines={12} class='text-neutral-800' length={5} width={2} />
     {/* dynamic */}
-    <Hand rotate={subsecond} handClass="text-neutral-300" handLength={90} handWidth={8} />
-    <Hand rotate={hour} handClass="text-neutral-700" handLength={50} handWidth={4} />
-    <Hand rotate={minute} handClass="text-neutral-500" handLength={70} handWidth={3} />
-    <Hand rotate={second} handClass="text-red-500" handLength={90} handWidth={2} />
+    <Hand rotate={subsecond} class="text-neutral-200" length={85} width={5} />
+    <Hand rotate={hour} class="text-neutral-800" length={50} width={4} />
+    <Hand rotate={minute} class="text-neutral-800" length={70} width={3} />
+    <Hand rotate={second} class="text-red-500" length={80} width={2} />
   </svg>
 );
 
 export const Clock = (): JSX.Element => {
-  const date = $(new Date ());
-  const clearInterval = useInterval (() =>  date(new Date), 40);
+  const time = $(getSecondsSinceMidnight());
+  const clearInterval = useAnimationLoop(() => time(getSecondsSinceMidnight()));
   useCleanup(clearInterval);
 
   return (
-  <div class="flex flex-wrap items-center justify-center h-full">
-    {Array.from({ length: 276 }).map(() => (
-      <ClockFace
-        hour={() => rotate(hour(date()))}
-        minute={() => rotate(minute(date()))}
-        second={() => rotate(second(date()))}
-        subsecond={() => rotate(subsecond(date()))}
-      />
-    ))}
-  </div>
+    <div class="flex flex-wrap items-center justify-center h-full">
+      {Array.from({ length: 1 }).map(() => (
+        <ClockFace
+          hour={() => rotate(hour(time()))}
+          minute={() => rotate(minute(time()))}
+          second={() => rotate(second(time()))}
+          subsecond={() => rotate(subsecond(time()))}
+        />
+      ))}
+    </div>
   )
 };
 

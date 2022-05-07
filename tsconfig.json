@@ -6,9 +6,10 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "jsx": "preserve",
+    "jsxImportSource": "voby",
     "types": ["vite/client"],
     "noEmit": true,
     "isolatedModules": true,
-    "baseUrl": "src"
-  }
+    "baseUrl": "src",
+  },
 }
