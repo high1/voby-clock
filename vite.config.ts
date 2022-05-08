@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import voby from 'voby/vite';
+import voby from 'voby-vite';
 import uno from 'unocss/vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 

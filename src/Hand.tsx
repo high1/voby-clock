@@ -1,13 +1,18 @@
 import type { FunctionMaybe } from "voby";
 
-type HandProps = { rotate: FunctionMaybe<string>, class: string, length: number, width: number, fixed?: boolean};
+type HandProps = {
+  rotate: FunctionMaybe<string>,
+  class: string,
+  length: number,
+  width: number,
+  fixed?: boolean,
+  limit?: number
+};
 
-export const Hand = ({rotate, length, width, fixed, ...rest}: HandProps): JSX.Element => (
+export const Hand = ({rotate, length, width, fixed, limit = 94, ...rest}: HandProps): JSX.Element => (
   <line
-    x1={fixed ? 195 - length : 100}
-    y1={100}
-    x2={fixed ? 195 : 100}
-    y2={100 - (fixed ? 0 : length)}
+    {...fixed && { y1: length - limit }}
+    y2={-(fixed ? limit : length)}
     stroke="currentColor"
     stroke-width={width}
     stroke-linecap="round"
