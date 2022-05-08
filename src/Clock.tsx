@@ -19,10 +19,10 @@ const ClockFace = ({ hour, minute, second, subsecond }: ClockFaceProps): JSX.Ele
       <circle class="text-neutral-900" r="99" fill="transparent" stroke="currentColor"/>
       <Lines numberOfLines={60} class='text-neutral-400' length={3} width={1} />
       <Lines numberOfLines={12} class='text-neutral-800' length={7} width={2} />
-      <Hand rotate={subsecond} class="text-neutral-200" length={83} width={5} />
-      <Hand rotate={hour} class="text-neutral-800" length={50} width={4} />
-      <Hand rotate={minute} class="text-neutral-800" length={70} width={3} />
-      <Hand rotate={second} class="text-red-500" length={77} width={2} />
+      <Hand rotate={subsecond} class="text-neutral-200 change-transform" length={83} width={5} />
+      <Hand rotate={hour} class="text-neutral-800 change-transform" length={50} width={4} />
+      <Hand rotate={minute} class="text-neutral-800 change-transform" length={70} width={3} />
+      <Hand rotate={second} class="text-red-500 change-transform" length={77} width={2} />
     </g>
   </svg>
 );
