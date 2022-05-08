@@ -39,14 +39,12 @@ export const Clock = (): JSX.Element => {
 
   return (
     <div class="flex flex-wrap items-center justify-center h-full">
-      {Array.from({ length: 1 }).map(() => (
-        <ClockFace
-          hour={hour}
-          minute={minute}
-          second={second}
-          subsecond={subsecond}
-        />
-      ))}
+      <ClockFace
+        hour={hour}
+        minute={minute}
+        second={second}
+        subsecond={subsecond}
+      />
     </div>
   )
 };
