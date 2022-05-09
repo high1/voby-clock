@@ -6,7 +6,7 @@
   "keywords": [],
   "description": "voby clock, inspired by sauron clock",
   "dependencies": {
-    "voby": "^0.20.1"
+    "voby": "^0.20.2"
   },
   "devDependencies": {
     "typescript": "^4.6.4",
