@@ -16,7 +16,7 @@ type ClockFaceProps = {
 const ClockFace = ({ hour, minute, second, subsecond }: ClockFaceProps): JSX.Element => (
   <svg viewBox="0 0 200 200" class="h-9/10">
     <g transform="translate(100, 100)">
-      <circle class="text-neutral-900" r="99" fill="transparent" stroke="currentColor"/>
+      <circle class="text-neutral-900 fill-none stroke-current" r="99" />
       <Lines numberOfLines={60} class='text-neutral-400' length={3} width={1} />
       <Lines numberOfLines={12} class='text-neutral-800' length={7} width={2} />
       <Hand rotate={subsecond} class="text-neutral-200 change-transform" length={83} width={5} />
