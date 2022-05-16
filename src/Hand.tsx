@@ -2,12 +2,11 @@ import type { FunctionMaybe } from 'voby';
 
 type HandProps = {
   rotate: FunctionMaybe<string>;
-  class: string;
   length: number;
   width: number;
   fixed?: boolean;
   limit?: number;
-};
+} & JSX.SVGAttributes<SVGLineElement>;
 
 export const Hand = ({ rotate, length, width, fixed, limit = 94, ...rest }: HandProps): JSX.Element => (
   <line
