@@ -15,12 +15,12 @@ const ClockFace = ({ hour, minute, second, subsecond }: ClockFaceProps): JSX.Ele
   <svg viewBox="0 0 200 200" class="h-95vmin">
     <g transform="translate(100, 100)">
       <circle class="text-neutral-900 fill-none stroke-current" r="99" />
-      {Array.from({ length: 60 }, (_, index) => [index, index % 5]).map(([index, isNotDivisibleByFive]) => (
+      {Array.from({ length: 60 }, (_, index) => [index, index % 5]).map(([index, isNotHour]) => (
         <Hand
           rotate={`rotate(${(360 * index) / 60})`}
-          class={isNotDivisibleByFive ? 'text-neutral-400' : 'text-neutral-800'}
-          length={isNotDivisibleByFive ? 3 : 7}
-          width={isNotDivisibleByFive ? 1 : 2}
+          class={isNotHour ? 'text-neutral-400' : 'text-neutral-800'}
+          length={isNotHour ? 3 : 7}
+          width={isNotHour ? 1 : 2}
           fixed
         />
       ))}
