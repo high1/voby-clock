@@ -15,7 +15,10 @@ const ClockFace = ({ hour, minute, second, subsecond }: ClockFaceProps): JSX.Ele
   <svg viewBox="0 0 200 200" class="h-95vmin">
     <g transform="translate(100, 100)">
       <circle class="text-neutral-900 fill-none stroke-current" r="99" />
-      {Array.from({ length: 60 }, (_, index) => ({ index, isHour: index % 5 === 0 })).map(({ index, isHour }) => (
+      {Array.from({ length: 60 }, (_, index) => ({
+        index,
+        isHour: index % 5 === 0,
+      })).map(({ index, isHour }) => (
         <Hand
           rotate={`rotate(${(360 * index) / 60})`}
           class={isHour ? 'text-neutral-800' : 'text-neutral-400'}

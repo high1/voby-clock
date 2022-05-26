@@ -5,11 +5,11 @@ specifiers:
   unocss: ^0.34.1
   vite: ^2.9.9
   vite-tsconfig-paths: ^3.4.1
-  voby: ^0.21.4
+  voby: ^0.23.2
   voby-vite: ^1.0.0
 
 dependencies:
-  voby: 0.21.4
+  voby: 0.23.2
 
 devDependencies:
   typescript: 4.7.2
@@ -86,7 +86,7 @@ packages:
     dev: true
 
   /@types/json5/0.0.29:
-    resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=}
+    resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
   /@unocss/cli/0.34.1:
@@ -755,8 +755,8 @@ packages:
       path-key: 3.1.1
     dev: true
 
-  /oby/7.0.9:
-    resolution: {integrity: sha512-cqaU9Iqv0+nIlJH5cvSRPliTwRyWYXVtJQvvxnT60FOVy/5GLR53mqh7ZKj3yfFt9sxyK0Hv2x5glCxr0EHZPg==}
+  /oby/8.0.1:
+    resolution: {integrity: sha512-OQXZmkxuUDpyzCSZhA5JcO2xViindtYrt6X4T4T4Wq+PTBpJxkEl2faZIcxIKdh5r7DtAcaX//HPS//nN5FaCg==}
     dev: false
 
   /ohmyfetch/0.4.18:
@@ -820,8 +820,8 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /postcss/8.4.13:
-    resolution: {integrity: sha512-jtL6eTBrza5MPzy8oJLFuUscHDXTV5KcLlqAWHl5q5WYRfnNRGSmOZmOZ1T6Gy7A99mOZfqungmZMpMmCVJ8ZA==}
+  /postcss/8.4.14:
+    resolution: {integrity: sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.4
@@ -863,8 +863,8 @@ packages:
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
     dev: true
 
-  /rollup/2.73.0:
-    resolution: {integrity: sha512-h/UngC3S4Zt28mB3g0+2YCMegT5yoftnQplwzPqGZcKvlld5e+kT/QRmJiL+qxGyZKOYpgirWGdLyEO1b0dpLQ==}
+  /rollup/2.74.1:
+    resolution: {integrity: sha512-K2zW7kV8Voua5eGkbnBtWYfMIhYhT9Pel2uhBk2WO5eMee161nPze/XRfvEQPFYz7KgrCCnmh2Wy0AMFLGGmMA==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
@@ -1033,9 +1033,9 @@ packages:
         optional: true
     dependencies:
       esbuild: 0.14.39
-      postcss: 8.4.13
+      postcss: 8.4.14
       resolve: 1.22.0
-      rollup: 2.73.0
+      rollup: 2.74.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -1044,11 +1044,11 @@ packages:
     resolution: {integrity: sha512-IFiPtKRwNut0xtBAHSW91sxDx91IglULgpPXMUhKrKsKlmMBKw1CeXun9uw1Bl4NS6TGIIkEkQ4XsaydatEx/A==}
     dev: true
 
-  /voby/0.21.4:
-    resolution: {integrity: sha512-SdZRAQRou/I5x7R2miGpsOpZHgIVxnehwXIAER5dwKA25QvEkLBVor/eQk+872yeNRN6oEBMErg7H9QQaiWdHA==}
+  /voby/0.23.2:
+    resolution: {integrity: sha512-/++zb/v60yCMJ/2SPNWSzrZcuLSk9lt7+dLY4Oc2yz4ZhMZPXrQ+gOjDczYsOEB+4wZKGZqk/pXSaaEwlc80gQ==}
     dependencies:
       htm: 3.1.1
-      oby: 7.0.9
+      oby: 8.0.1
     dev: false
 
   /which/2.0.2:

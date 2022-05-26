@@ -8,7 +8,14 @@ type HandProps = {
   limit?: number;
 } & JSX.SVGAttributes<SVGLineElement>;
 
-export const Hand = ({ rotate, length, width, fixed, limit = 94, ...rest }: HandProps): JSX.Element => (
+export const Hand = ({
+  rotate,
+  length,
+  width,
+  fixed,
+  limit = 94,
+  ...rest
+}: HandProps): JSX.Element => (
   <line
     {...(fixed && { y1: length - limit })}
     y2={-(fixed ? limit : length)}
