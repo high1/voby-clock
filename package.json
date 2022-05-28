@@ -9,16 +9,16 @@
     "typescript": "^4.7.2",
     "unocss": "^0.34.1",
     "vite": "^2.9.9",
-    "vite-tsconfig-paths": "^3.4.1",
+    "vite-tsconfig-paths": "^3.5.0",
     "voby-vite": "^1.0.0"
   },
   "dependencies": {
-    "voby": "^0.23.2"
+    "voby": "^0.24.1"
   },
   "scripts": {
     "build": "vite build",
     "dev": "vite",
     "start": "vite"
   },
-  "packageManager": "pnpm@7.1.5"
+  "packageManager": "pnpm@7.1.6"
 }

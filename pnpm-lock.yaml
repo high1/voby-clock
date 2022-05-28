@@ -4,18 +4,18 @@ specifiers:
   typescript: ^4.7.2
   unocss: ^0.34.1
   vite: ^2.9.9
-  vite-tsconfig-paths: ^3.4.1
-  voby: ^0.23.2
+  vite-tsconfig-paths: ^3.5.0
+  voby: ^0.24.1
   voby-vite: ^1.0.0
 
 dependencies:
-  voby: 0.23.2
+  voby: 0.24.1
 
 devDependencies:
   typescript: 4.7.2
   unocss: 0.34.1_vite@2.9.9
   vite: 2.9.9
-  vite-tsconfig-paths: 3.4.1_vite@2.9.9
+  vite-tsconfig-paths: 3.5.0_vite@2.9.9
   voby-vite: 1.0.0
 
 packages:
@@ -83,10 +83,6 @@ packages:
     dependencies:
       estree-walker: 2.0.2
       picomatch: 2.3.1
-    dev: true
-
-  /@types/json5/0.0.29:
-    resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
   /@unocss/cli/0.34.1:
@@ -664,11 +660,10 @@ packages:
     hasBin: true
     dev: true
 
-  /json5/1.0.1:
-    resolution: {integrity: sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==}
+  /json5/2.2.1:
+    resolution: {integrity: sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==}
+    engines: {node: '>=6'}
     hasBin: true
-    dependencies:
-      minimist: 1.2.6
     dev: true
 
   /kolorist/1.5.1:
@@ -755,8 +750,8 @@ packages:
       path-key: 3.1.1
     dev: true
 
-  /oby/8.0.1:
-    resolution: {integrity: sha512-OQXZmkxuUDpyzCSZhA5JcO2xViindtYrt6X4T4T4Wq+PTBpJxkEl2faZIcxIKdh5r7DtAcaX//HPS//nN5FaCg==}
+  /oby/8.1.0:
+    resolution: {integrity: sha512-gmUrs9nesa8R2VB8KOGv6jmRRR6NDXn11sI3VgJg76hM1pLcrCTAgfDtEK/WfAnRdyGRUTJjGLhQ1zgy5tWFqQ==}
     dev: false
 
   /ohmyfetch/0.4.18:
@@ -943,11 +938,10 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /tsconfig-paths/3.14.1:
-    resolution: {integrity: sha512-fxDhWnFSLt3VuTwtvJt5fpwxBHg5AdKWMsgcPOOIilyjymcYVZoCQF8fvFRezCNfblEXmi+PcM1eYHeOAgXCOQ==}
+  /tsconfig-paths/4.0.0:
+    resolution: {integrity: sha512-SLBg2GBKlR6bVtMgJJlud/o3waplKtL7skmLkExomIiaAtLGtVsoXIqP3SYdjbcH9lq/KVv7pMZeCBpLYOit6Q==}
     dependencies:
-      '@types/json5': 0.0.29
-      json5: 1.0.1
+      json5: 2.2.1
       minimist: 1.2.6
       strip-bom: 3.0.0
     dev: true
@@ -1002,15 +996,15 @@ packages:
       - vite
     dev: true
 
-  /vite-tsconfig-paths/3.4.1_vite@2.9.9:
-    resolution: {integrity: sha512-SgK3/pnTuJ3i+gMSAWLR6VCPSw26bnxawrmXGvCDjJgk8MAQgmbCrFrAzfwbwZBXSqSuvWEuX04Wt73qJKx8fQ==}
+  /vite-tsconfig-paths/3.5.0_vite@2.9.9:
+    resolution: {integrity: sha512-NKIubr7gXgh/3uniQaOytSg+aKWPrjquP6anAy+zCWEn6h9fB8z2/qdlfQrTgZWaXJ2pHVlllrSdRZltHn9P4g==}
     peerDependencies:
       vite: '>2.0.0-0'
     dependencies:
       debug: 4.3.4
       globrex: 0.1.2
       recrawl-sync: 2.2.2
-      tsconfig-paths: 3.14.1
+      tsconfig-paths: 4.0.0
       vite: 2.9.9
     transitivePeerDependencies:
       - supports-color
@@ -1044,11 +1038,11 @@ packages:
     resolution: {integrity: sha512-IFiPtKRwNut0xtBAHSW91sxDx91IglULgpPXMUhKrKsKlmMBKw1CeXun9uw1Bl4NS6TGIIkEkQ4XsaydatEx/A==}
     dev: true
 
-  /voby/0.23.2:
-    resolution: {integrity: sha512-/++zb/v60yCMJ/2SPNWSzrZcuLSk9lt7+dLY4Oc2yz4ZhMZPXrQ+gOjDczYsOEB+4wZKGZqk/pXSaaEwlc80gQ==}
+  /voby/0.24.1:
+    resolution: {integrity: sha512-GhhAZL3kOU/tAq9YDbp4ciAOiKL22THwxlXNMFPFQqgUgUhrniCPcUsCfqJmQclcv74SG4ywoNcyMWaumbgyDg==}
     dependencies:
       htm: 3.1.1
-      oby: 8.0.1
+      oby: 8.1.0
     dev: false
 
   /which/2.0.2:
