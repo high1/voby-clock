@@ -6,19 +6,19 @@
   "keywords": [],
   "description": "voby clock, inspired by sauron clock",
   "devDependencies": {
-    "typescript": "^4.7.2",
-    "unocss": "^0.34.1",
+    "typescript": "^4.7.3",
+    "unocss": "^0.37.4",
     "vite": "^2.9.9",
     "vite-tsconfig-paths": "^3.5.0",
     "voby-vite": "^1.0.0"
   },
   "dependencies": {
-    "voby": "^0.24.1"
+    "voby": "^0.27.7"
   },
   "scripts": {
     "build": "vite build",
     "dev": "vite",
     "start": "vite"
   },
-  "packageManager": "pnpm@7.1.6"
+  "packageManager": "pnpm@7.1.8"
 }
