@@ -19,7 +19,7 @@ const ClockFace = ({
   subsecond,
 }: ClockFaceProps): JSX.Element => (
   <svg viewBox="0 0 200 200" class="h-95vmin">
-    <g transform="translate(100, 100)">
+    <g class="translate-100px">
       <circle class="text-neutral-900 fill-none stroke-current" r="99" />
       {Array.from({ length: 60 }, (_, index) => ({
         index,
@@ -30,11 +30,11 @@ const ClockFace = ({
           class={isHour ? 'text-neutral-800' : 'text-neutral-400'}
           length={isHour ? 7 : 3}
           width={isHour ? 2 : 1}
-          fixed
+          stationary
         />
       ))}
     </g>
-    <g transform="translate(100, 100)">
+    <g class="translate-100px">
       <Hand
         transform={subsecond}
         class="text-neutral-200 change-transform"
@@ -46,7 +46,7 @@ const ClockFace = ({
       <Hand transform={second} class="text-red-500" length={77} width={2} />
     </g>
   </svg>
-);;
+);
 
 export const Clock = (): JSX.Element => {
   const time = $(getSecondsSinceMidnight());
