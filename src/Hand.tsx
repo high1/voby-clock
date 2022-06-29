@@ -15,9 +15,8 @@ export const Hand = ({
   <line
     {...(stationary && { y1: length - limit })}
     y2={-(stationary ? limit : length)}
-    stroke="currentColor"
-    stroke-width={width}
-    stroke-linecap="round"
+    strokeLinecap="round"
+    strokeWidth={width}
     {...rest}
   />
 );
