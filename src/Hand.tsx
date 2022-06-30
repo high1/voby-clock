@@ -15,8 +15,8 @@ export const Hand = ({
   <line
     {...(stationary && { y1: length - limit })}
     y2={-(stationary ? limit : length)}
-    strokeLinecap="round"
     strokeWidth={width}
     {...rest}
+    class={['stroke-cap-round', rest.class]}
   />
 );
