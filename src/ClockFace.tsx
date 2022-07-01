@@ -22,9 +22,12 @@ export const ClockFace = ({
       })).map(({ index, isHour }) => (
         <Hand
           transform={`rotate(${(360 * index) / 60})`}
-          class={isHour ? 'stroke-neutral-800' : 'stroke-neutral-400'}
+          class={
+            isHour
+              ? 'stroke-neutral-800 stroke-width-2'
+              : 'stroke-neutral-400 stroke-width-1'
+          }
           length={isHour ? 7 : 3}
-          width={isHour ? 2 : 1}
           stationary
         />
       ))}
@@ -32,13 +35,24 @@ export const ClockFace = ({
     <g class="translate-100px">
       <Hand
         transform={subsecond}
-        class="stroke-neutral-200 change-transform"
+        class="stroke-neutral-200 stroke-width-5 change-transform"
         length={83}
-        width={5}
       />
-      <Hand transform={hour} class="stroke-neutral-800" length={50} width={4} />
-      <Hand transform={minute} class="stroke-neutral-800" length={70} width={3} />
-      <Hand transform={second} class="stroke-red-500" length={77} width={2} />
+      <Hand
+        transform={hour}
+        class="stroke-neutral-800 stroke-width-4"
+        length={50}
+      />
+      <Hand
+        transform={minute}
+        class="stroke-neutral-800 stroke-width-3"
+        length={70}
+      />
+      <Hand
+        transform={second}
+        class="stroke-red-500 stroke-width-2"
+        length={77}
+      />
     </g>
   </svg>
 );

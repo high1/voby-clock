@@ -5,11 +5,11 @@ specifiers:
   unocss: ^0.42.0
   vite: ^2.9.13
   vite-tsconfig-paths: ^3.5.0
-  voby: ^0.30.5
+  voby: ^0.30.6
   voby-vite: ^1.0.1
 
 dependencies:
-  voby: 0.30.5
+  voby: 0.30.6
 
 devDependencies:
   typescript: 4.7.4
@@ -1050,8 +1050,8 @@ packages:
     resolution: {integrity: sha512-MNT+48YgEMzG4dbcxNSBO35GmgbW/XxsiQd8x0pdBpPyXOaPhIQKWsd3uVgGOs4/SIzmzfdAb3HS+UFAHfDZog==}
     dev: true
 
-  /voby/0.30.5:
-    resolution: {integrity: sha512-4DV2p3iTGm9vA0eS/38hWZiPYfj0DBKGruRC30OCiosbtMz/5AVVGcMAaBEwoWsP58XErbYv43UPNDbDSBmJkQ==}
+  /voby/0.30.6:
+    resolution: {integrity: sha512-Ofxs4q68hxmqcIR9N5YLNweVyG54Hm1ZWH2f31rkS7CrsiXHBdsqM6bK35v81lYR/M3uhtiIQATm2+3nP6R6Dw==}
     dependencies:
       htm: 3.1.1
       oby: 9.2.6

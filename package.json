@@ -13,12 +13,12 @@
     "voby-vite": "^1.0.1"
   },
   "dependencies": {
-    "voby": "^0.30.5"
+    "voby": "^0.30.6"
   },
   "scripts": {
     "build": "vite build",
     "dev": "vite",
     "start": "vite"
   },
-  "packageManager": "pnpm@7.3.0"
+  "packageManager": "pnpm@7.4.1"
 }
