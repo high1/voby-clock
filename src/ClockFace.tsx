@@ -15,7 +15,10 @@ export const ClockFace = ({
 }: ClockFaceProps): JSX.Element => (
   <svg viewBox="0 0 200 200" class="h-95vmin">
     <g class="translate-100px">
-      <circle class="stroke-neutral-900 fill-none" r="99" />
+      <circle
+        class="stroke-neutral-900 @dark:stroke-neutral-100 fill-none"
+        r="99"
+      />
       {Array.from({ length: 60 }, (_, index) => ({
         index,
         isHour: index % 5 === 0,
@@ -24,8 +27,8 @@ export const ClockFace = ({
           transform={`rotate(${(360 * index) / 60})`}
           class={
             isHour
-              ? 'stroke-neutral-800 stroke-width-2'
-              : 'stroke-neutral-400 stroke-width-1'
+              ? 'stroke-neutral-800 @dark:stroke-neutral-200 stroke-width-2'
+              : 'stroke-neutral-400 @dark:stroke-neutral-600 stroke-width-1'
           }
           length={isHour ? 7 : 3}
           stationary
@@ -35,17 +38,17 @@ export const ClockFace = ({
     <g class="translate-100px">
       <Hand
         transform={subsecond}
-        class="stroke-neutral-200 stroke-width-5 change-transform"
+        class="stroke-neutral-200 @dark:stroke-neutral-600 stroke-width-5 change-transform"
         length={83}
       />
       <Hand
         transform={hour}
-        class="stroke-neutral-800 stroke-width-4"
+        class="stroke-neutral-800 @dark:stroke-neutral-200 stroke-width-4"
         length={50}
       />
       <Hand
         transform={minute}
-        class="stroke-neutral-800 stroke-width-3"
+        class="stroke-neutral-800 @dark:stroke-neutral-200 stroke-width-3"
         length={70}
       />
       <Hand

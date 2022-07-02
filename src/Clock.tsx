@@ -16,7 +16,7 @@ export const Clock = (): JSX.Element => {
   const hour = () => rotate(((time() / 60 / 60) % 12) / 12);
 
   return (
-    <div class="flex items-center justify-center h-full">
+    <div class="flex items-center justify-center h-full @dark:bg-neutral-700">
       <ClockFace {...{ hour, minute, second, subsecond }} />
     </div>
   );
