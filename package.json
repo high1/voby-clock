@@ -13,7 +13,7 @@
     "voby-vite": "^1.0.1"
   },
   "dependencies": {
-    "voby": "^0.32.0"
+    "voby": "^0.32.1"
   },
   "scripts": {
     "build": "vite build",

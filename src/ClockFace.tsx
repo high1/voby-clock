@@ -28,7 +28,7 @@ export const ClockFace = ({
           class={
             isHour
               ? 'stroke-neutral-800 @dark:stroke-neutral-200 stroke-width-2'
-              : 'stroke-neutral-400 @dark:stroke-neutral-600 stroke-width-1'
+              : 'stroke-neutral-400 @dark:stroke-neutral-600'
           }
           length={isHour ? 7 : 3}
           stationary
