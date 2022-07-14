@@ -6,4 +6,10 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 export default defineConfig({
   base: '/voby-clock/',
   plugins: [voby(), uno(), tsconfigPaths()],
+  optimizeDeps: {
+    disabled: false
+  },
+  build: {
+    commonjsOptions: { include: [] }
+  }
 });
