@@ -1,24 +1,24 @@
 {
   "private": true,
   "type": "module",
-  "name": "voby-demo-clock",
+  "name": "voby-clock",
   "version": "1.0.0",
   "keywords": [],
   "description": "voby clock, inspired by sauron clock",
   "devDependencies": {
     "typescript": "^4.7.4",
-    "unocss": "^0.44.2",
-    "vite": "3.0.0",
+    "unocss": "^0.44.5",
+    "vite": "3.0.2",
     "vite-tsconfig-paths": "^3.5.0",
     "voby-vite": "^1.0.1"
   },
   "dependencies": {
-    "voby": "^0.34.8"
+    "voby": "^0.34.11"
   },
   "scripts": {
     "build": "vite build",
     "dev": "vite",
     "start": "vite"
   },
-  "packageManager": "pnpm@7.5.1"
+  "packageManager": "pnpm@7.6.0"
 }
