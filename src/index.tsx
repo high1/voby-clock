@@ -1,5 +1,5 @@
 import 'uno.css';
 import { render } from 'voby';
-import { Clock } from 'Clock';
+import { ClockFace } from 'ClockFace';
 
-render(<Clock />, document.querySelector('#root'));
+render(<ClockFace />, document.querySelector('#root'));
