@@ -11,6 +11,6 @@
     "noEmit": true,
     "isolatedModules": true,
     "baseUrl": "src",
-    "skipLibCheck": true
-  },
+    // "skipLibCheck": true
+  }
 }

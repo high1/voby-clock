@@ -7,9 +7,9 @@ export default defineConfig({
   base: '/voby-clock/',
   plugins: [voby(), uno(), tsconfigPaths()],
   optimizeDeps: {
-    disabled: false
+    disabled: false,
   },
   build: {
-    commonjsOptions: { include: [] }
-  }
+    commonjsOptions: { include: [] },
+  },
 });
