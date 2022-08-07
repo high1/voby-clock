@@ -1,16 +1,16 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "Node16",
+    "module": "ESNext",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "jsxImportSource": "voby",
     "types": ["vite/client"],
     "noEmit": true,
     "isolatedModules": true,
     "baseUrl": "src",
-    // "skipLibCheck": true
+    "skipLibCheck": true
   }
 }

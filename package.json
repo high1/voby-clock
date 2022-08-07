@@ -7,13 +7,12 @@
   "description": "voby clock, inspired by sauron clock",
   "devDependencies": {
     "typescript": "^4.7.4",
-    "unocss": "^0.45.1",
+    "unocss": "^0.45.5",
     "vite": "3.0.4",
-    "vite-tsconfig-paths": "^3.5.0",
-    "voby-vite": "^1.0.1"
+    "vite-tsconfig-paths": "^3.5.0"
   },
   "dependencies": {
-    "voby": "^0.34.13"
+    "voby": "^0.35.0"
   },
   "scripts": {
     "build": "vite build",
@@ -21,5 +20,5 @@
     "preview": "vite preview",
     "start": "vite"
   },
-  "packageManager": "pnpm@7.6.0"
+  "packageManager": "pnpm@7.9.0"
 }
