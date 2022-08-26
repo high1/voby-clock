@@ -8,8 +8,8 @@ export const ClockFace = (): JSX.Element => {
   const time = $(getSecondsSinceMidnight());
   useAnimationLoop(() => time(getSecondsSinceMidnight()));
 
-  const rotate = (rotate: number, fixed: number = 1) =>
-    `rotate(${(rotate * 360).toFixed(fixed)})`;
+  const rotate = (rotate: number, fractionDigits = 1) =>
+    `rotate(${(rotate * 360).toFixed(fractionDigits)})`;
   const subsecond = () => rotate(time() % 1, 0);
   const second = () => rotate((time() % 60) / 60);
   const minute = () => rotate(((time() / 60) % 60) / 60);
