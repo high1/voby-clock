@@ -3,8 +3,12 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    braches:
+      -main
+
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -31,6 +35,14 @@ jobs:
           pnpm build
           touch dist/.nojekyll
 
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    strategy:
+      matrix:
+        node-version: [18]
+
+    steps:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
