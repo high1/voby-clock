@@ -1,5 +1,7 @@
 # SVG clock implemented in <a href="https://github.com/vobyjs/voby"><img src="https://raw.githubusercontent.com/vobyjs/voby/master/resources/logo/svg/logo.svg" alt="voby" height="60"></a>
 
+![build-and-deploy](https://github.com/high1/voby-clock/actions/workflows/main.yml/badge.svg)
+
 Inspired by [sauron clock](https://ivanceras.github.io/svg-clock/)  
 [![Build and Deploy](https://github.com/high1/voby-clock/actions/workflows/main.yml/badge.svg)](https://github.com/high1/voby-clock/actions/workflows/main.yml)
 
