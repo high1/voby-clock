@@ -14,10 +14,10 @@ specifiers:
   unocss: 0.45.18
   vite: 3.1.0
   vite-tsconfig-paths: 3.5.0
-  voby: 0.41.3
+  voby: 0.42.0
 
 dependencies:
-  voby: 0.41.3
+  voby: 0.42.0
 
 devDependencies:
   '@typescript-eslint/eslint-plugin': 5.36.2_2l2r3i3lm6jysqd4ac3ql4n2mm
@@ -2481,8 +2481,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /voby/0.41.3:
-    resolution: {integrity: sha512-ZZp4rYJKAjf1PpDCuQv2yWJlJMWivfiDg9CoHKpAeDaZllase9Q2NvRmJnI/Qp/Ktqsk2LFaol+R4VMtcc2rnA==}
+  /voby/0.42.0:
+    resolution: {integrity: sha512-QD+RIgduHkqghTdHhA5VJOJb5JR9SqX5XzJHC9UH934q10VHJUazF1YUncBl+InEwuUNGGEuA+2qXoJk+pqH2Q==}
     dependencies:
       htm: 3.1.1
       oby: 11.3.0
