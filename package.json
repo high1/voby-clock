@@ -17,11 +17,11 @@
     "prettier": "2.7.1",
     "typescript": "4.8.3",
     "unocss": "0.45.21",
-    "vite": "3.1.1",
+    "vite": "3.1.2",
     "vite-tsconfig-paths": "3.5.0"
   },
   "dependencies": {
-    "voby": "0.42.1"
+    "voby": "0.42.2"
   },
   "scripts": {
     "build": "vite build",
