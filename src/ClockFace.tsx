@@ -27,7 +27,7 @@ export const ClockFace = (): JSX.Element => {
             isHour: index % 5 === 0,
           })).map(({ isHour }, index, { length }) => (
             <Hand
-              transform={`rotate(${(360 * index) / length})`}
+              transform={rotate(index / length, 0)}
               class={
                 isHour
                   ? 'stroke-neutral-800 @dark:stroke-neutral-200 stroke-width-2'
