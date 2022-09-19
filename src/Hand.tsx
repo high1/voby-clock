@@ -13,7 +13,7 @@ export const Hand = ({
 }: HandProps): JSX.Element => (
   <line
     class={['stroke-cap-round', clazz]}
-    {...(stationary && { y1: length - limit })}
+    y1={stationary ? length - limit : undefined}
     y2={-(stationary ? limit : length)}
     {...rest}
   />
