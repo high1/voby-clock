@@ -21,7 +21,7 @@
     "vite-tsconfig-paths": "3.5.0"
   },
   "dependencies": {
-    "voby": "0.42.2"
+    "voby": "0.42.3"
   },
   "scripts": {
     "build": "vite build",
