@@ -10,7 +10,7 @@ export const Hand = ({
   limit = 94,
   stationary,
   ...rest
-}: HandProps): JSX.Element => (
+}: HandProps) => (
   <line
     class={['stroke-cap-round', clazz]}
     y1={stationary ? length - limit : undefined}

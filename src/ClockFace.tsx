@@ -4,7 +4,7 @@ import { Hand } from 'Hand';
 const getSecondsSinceMidnight = (): number =>
   (Date.now() - new Date().setHours(0, 0, 0, 0)) / 1000;
 
-export const ClockFace = (): JSX.Element => {
+export const ClockFace = () => {
   const time = $(getSecondsSinceMidnight());
   useAnimationLoop(() => time(getSecondsSinceMidnight()));
 
