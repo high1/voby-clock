@@ -12,7 +12,7 @@ specifiers:
   prettier: 2.7.1
   typescript: 4.8.4
   unocss: 0.45.29
-  vite: 3.1.7
+  vite: 3.1.8
   vite-tsconfig-paths: 3.5.1
   voby: 0.42.9
 
@@ -30,9 +30,9 @@ devDependencies:
   eslint-plugin-prettier: 4.2.1_hvbqyfstm4urdpm6ffpwfka4e4
   prettier: 2.7.1
   typescript: 4.8.4
-  unocss: 0.45.29_vite@3.1.7
-  vite: 3.1.7
-  vite-tsconfig-paths: 3.5.1_vite@3.1.7
+  unocss: 0.45.29_vite@3.1.8
+  vite: 3.1.8
+  vite-tsconfig-paths: 3.5.1_vite@3.1.8
 
 packages:
 
@@ -355,12 +355,12 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@unocss/astro/0.45.29_vite@3.1.7:
+  /@unocss/astro/0.45.29_vite@3.1.8:
     resolution: {integrity: sha512-osmUD8Dy0uPdA2BI6xZIUzOf0jHWySjDbdHNLceLVNnwxhl2znwqaSbSe/hUBypneGIX3wrHPUs9pwKFMLwPXw==}
     dependencies:
       '@unocss/core': 0.45.29
       '@unocss/reset': 0.45.29
-      '@unocss/vite': 0.45.29_vite@3.1.7
+      '@unocss/vite': 0.45.29_vite@3.1.8
     transitivePeerDependencies:
       - vite
     dev: true
@@ -493,7 +493,7 @@ packages:
       '@unocss/core': 0.45.29
     dev: true
 
-  /@unocss/vite/0.45.29_vite@3.1.7:
+  /@unocss/vite/0.45.29_vite@3.1.8:
     resolution: {integrity: sha512-pRCGtNP1XS4Pk8sSniHvkiOfB35xSu89l5xlib2sFjhjZ1nBn+KgUHNnmtt8/qsWgLFK6KkHKjwqx9c7mXmekw==}
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0
@@ -506,7 +506,7 @@ packages:
       '@unocss/scope': 0.45.29
       '@unocss/transformer-directives': 0.45.29
       magic-string: 0.26.6
-      vite: 3.1.7
+      vite: 3.1.8
     dev: true
 
   /acorn-jsx/5.3.2_acorn@8.8.0:
@@ -2422,7 +2422,7 @@ packages:
     engines: {node: '>=12.18'}
     dev: true
 
-  /unocss/0.45.29_vite@3.1.7:
+  /unocss/0.45.29_vite@3.1.8:
     resolution: {integrity: sha512-/itc6g5aNMPj0y0ZJCCs/1ovOa2+WNdbBWBuplyZB3InFoyxoW4Qg5CMdqPwLL8lcvxT82vEv6ZCMFGlsXWELA==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -2431,7 +2431,7 @@ packages:
       '@unocss/webpack':
         optional: true
     dependencies:
-      '@unocss/astro': 0.45.29_vite@3.1.7
+      '@unocss/astro': 0.45.29_vite@3.1.8
       '@unocss/cli': 0.45.29
       '@unocss/core': 0.45.29
       '@unocss/preset-attributify': 0.45.29
@@ -2447,7 +2447,7 @@ packages:
       '@unocss/transformer-compile-class': 0.45.29
       '@unocss/transformer-directives': 0.45.29
       '@unocss/transformer-variant-group': 0.45.29
-      '@unocss/vite': 0.45.29_vite@3.1.7
+      '@unocss/vite': 0.45.29_vite@3.1.8
     transitivePeerDependencies:
       - supports-color
       - vite
@@ -2459,7 +2459,7 @@ packages:
       punycode: 2.1.1
     dev: true
 
-  /vite-tsconfig-paths/3.5.1_vite@3.1.7:
+  /vite-tsconfig-paths/3.5.1_vite@3.1.8:
     resolution: {integrity: sha512-t7cPvDMDxOCUxxNLqngXiX+L6jPYBr+eMgkeVadknxBb89d2s1aejz+wFEep010VfXjGVAUWGEFPe1fkRYTFvg==}
     peerDependencies:
       vite: '>2.0.0-0'
@@ -2468,13 +2468,13 @@ packages:
       globrex: 0.1.2
       recrawl-sync: 2.2.2
       tsconfig-paths: 4.1.0
-      vite: 3.1.7
+      vite: 3.1.8
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite/3.1.7:
-    resolution: {integrity: sha512-5vCAmU4S8lyVdFCInu9M54f/g8qbOMakVw5xJ4pjoaDy5wgy9sLLZkGdSLN52dlsBqh0tBqxjaqqa8LgPqwRAA==}
+  /vite/3.1.8:
+    resolution: {integrity: sha512-m7jJe3nufUbuOfotkntGFupinL/fmuTNuQmiVE7cH2IZMuf4UbfbGYMUT3jVWgGYuRVLY9j8NnrRqgw5rr5QTg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
