@@ -14,10 +14,10 @@ specifiers:
   unocss: 0.45.29
   vite: 3.1.8
   vite-tsconfig-paths: 3.5.1
-  voby: 0.42.9
+  voby: 0.43.0
 
 dependencies:
-  voby: 0.42.9
+  voby: 0.43.0
 
 devDependencies:
   '@typescript-eslint/eslint-plugin': 5.40.0_25sstg4uu2sk4pm7xcyzuov7xq
@@ -1972,8 +1972,8 @@ packages:
       es-abstract: 1.20.1
     dev: true
 
-  /oby/11.3.1:
-    resolution: {integrity: sha512-5rzVburHtnJ1sjM0cqUO/co4GJpS/BgN3pJl5mk70vR7GHuuN2hSwipqRXjAjOIZ7/9CRoUdFjglZKrEYHZFqQ==}
+  /oby/12.1.1:
+    resolution: {integrity: sha512-0ihRxKH4KoUBjLidIRb2MBwHHRr6nnoOcSmpGzlp/bDniQ+CcVBMBt77lVRLgJbbfn6him9njMFSZEoA31OZPA==}
     dev: false
 
   /ohmyfetch/0.4.19:
@@ -2500,11 +2500,11 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /voby/0.42.9:
-    resolution: {integrity: sha512-03W0WU2mjRdTkvy7N3Cqi661eDmT+LGtLszmLvU0emgPzzCSHY0jaUFKaLNhLijeoB1XV8+564cZlD4BjmBcpQ==}
+  /voby/0.43.0:
+    resolution: {integrity: sha512-gXoWq8Vs2e/gPICql0anZMAEaqMfBVsCMPg++p2ah9SdUz/eRoy8OFfhjll87nTtcD0Xz26dgf3uvR9yd/AwRQ==}
     dependencies:
       htm: 3.1.1
-      oby: 11.3.1
+      oby: 12.1.1
     dev: false
 
   /which-boxed-primitive/1.0.2:
