@@ -1,6 +1,6 @@
 {
   "root": true,
-  "ignorePatterns": ["dist/*"],
+  "ignorePatterns": ["dist", "!**/.*"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx"],
@@ -30,8 +30,17 @@
         "import/resolver": {
           "typescript": {}
         },
-        "import/core-modules": [ "uno.css" ]
+        "import/core-modules": ["uno.css"]
       }
+    },
+    {
+      "files": ["*.json"],
+      "parser": "jsonc-eslint-parser",
+      "extends": [
+        "eslint:recommended",
+        "plugin:jsonc/recommended-with-json",
+        "plugin:prettier/recommended"
+      ]
     }
   ]
 }

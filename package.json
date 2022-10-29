@@ -12,6 +12,7 @@
     "eslint-config-prettier": "8.5.0",
     "eslint-import-resolver-typescript": "3.5.2",
     "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsonc": "^2.5.0",
     "eslint-plugin-jsx-a11y": "6.6.1",
     "eslint-plugin-prettier": "4.2.1",
     "prettier": "2.7.1",
@@ -29,5 +30,5 @@
     "preview": "vite preview",
     "start": "vite"
   },
-  "packageManager": "pnpm@7.14.0"
+  "packageManager": "pnpm@7.14.1"
 }
