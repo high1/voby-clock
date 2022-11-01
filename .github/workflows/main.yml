@@ -5,6 +5,9 @@ on:
       - main
   pull_request:
 
+env:
+  BASE: /voby-clock/
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
