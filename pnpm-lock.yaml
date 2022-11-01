@@ -17,10 +17,10 @@ specifiers:
   unocss: 0.46.2
   vite: 3.2.2
   vite-tsconfig-paths: 3.5.2
-  voby: 0.43.6
+  voby: 0.43.7
 
 dependencies:
-  voby: 0.43.6
+  voby: 0.43.7
 
 devDependencies:
   '@types/node': 18.11.8
@@ -2055,8 +2055,8 @@ packages:
       es-abstract: 1.20.1
     dev: true
 
-  /oby/12.4.5:
-    resolution: {integrity: sha512-R3dh4pN5NXmfdoghQ2p5TG3dGLYbu6TmEdwrnbZcaplOC72Bl6iGxkhdHblSCy570pqXuHvXoR5VfpRIFW85Zw==}
+  /oby/12.4.6:
+    resolution: {integrity: sha512-R96VWkcnT+DfFZfTXBX0BH91KaEEI0d/7QHrwXeoomV5k5AP8SvPoDDeb8cW2nAaMDZ64KhGtJSJZRXItd0FuA==}
     dev: false
 
   /ohmyfetch/0.4.20:
@@ -2601,11 +2601,11 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /voby/0.43.6:
-    resolution: {integrity: sha512-cMOFcos0hRlr3YGNQyZxFOSiFinGbXg7tFghAxpR7eVbHlm+XFSMJRoG9B1f90uUqHHxuhJkdx7Xa8yiWbY+LA==}
+  /voby/0.43.7:
+    resolution: {integrity: sha512-ZHA3LpHi9NSgllJU9y3/FgO621iCt7CScdMI++MCdVGNWOI84YrJwU1duVHq65YoJ2BLaTCX5NhsLhvwWw23zg==}
     dependencies:
       htm: 3.1.1
-      oby: 12.4.5
+      oby: 12.4.6
     dev: false
 
   /which-boxed-primitive/1.0.2:
