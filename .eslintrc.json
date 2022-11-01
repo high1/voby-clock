@@ -3,7 +3,7 @@
   "ignorePatterns": ["dist", "!**/.*"],
   "overrides": [
     {
-      "files": ["*.ts", "*.tsx"],
+      "files": ["*.{ts,tsx}"],
       "parser": "@typescript-eslint/parser",
       "extends": [
         "eslint:recommended",
@@ -16,12 +16,12 @@
       ],
       "env": {
         "browser": true,
-        "es2022": true,
         "node": true
       },
       "parserOptions": {
         "sourceType": "module",
         "project": "tsconfig.json",
+        "ecmaVersion": "latest",
         "ecmaFeatures": {
           "jsx": true
         }
@@ -35,10 +35,10 @@
     },
     {
       "files": ["*.json"],
-      "parser": "jsonc-eslint-parser",
       "extends": [
         "eslint:recommended",
         "plugin:jsonc/recommended-with-json",
+        "plugin:jsonc/prettier",
         "plugin:prettier/recommended"
       ]
     }
