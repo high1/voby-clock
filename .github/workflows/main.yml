@@ -6,7 +6,7 @@ on:
   pull_request:
 
 env:
-  BASE: /voby-clock/
+  BASE: /${{ github.event.repository.name }}/
 
 jobs:
   build-and-deploy:
