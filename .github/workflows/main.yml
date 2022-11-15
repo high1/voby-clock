@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: ['*']
+        node-version: [19]
 
     steps:
       - name: Checkout 🛎️
@@ -22,7 +22,7 @@ jobs:
       - name: Pnpm 🧱
         uses: pnpm/action-setup@v2.2.4
 
-      - name: Node.js ⚓
+      - name: Node.js ${{ matrix.node-version }} ⚓
         uses: actions/setup-node@v3.5.1
         with:
           node-version: ${{ matrix.node-version }}
