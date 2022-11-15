@@ -1,6 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@html-eslint/eslint-plugin': ^0.15.0
+  '@html-eslint/parser': ^0.15.0
   '@types/node': ^18.11.8
   '@typescript-eslint/eslint-plugin': 5.43.0
   '@typescript-eslint/parser': 5.43.0
@@ -23,6 +25,8 @@ dependencies:
   voby: 0.43.8
 
 devDependencies:
+  '@html-eslint/eslint-plugin': 0.15.0
+  '@html-eslint/parser': 0.15.0
   '@types/node': 18.11.8
   '@typescript-eslint/eslint-plugin': 5.43.0_yy4vf4gcvxiubmg7fqa55dqe2i
   '@typescript-eslint/parser': 5.43.0_rmayb2veg2btbq6mbmnyivgasy
@@ -113,6 +117,18 @@ packages:
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@html-eslint/eslint-plugin/0.15.0:
+    resolution: {integrity: sha512-6DUb2ZN1PUlzlNzNj4aBhoObBp3Kl/+YbZ6CnkgFAsQSW0tSFAu7p8WwESkz9RZLZZN9gCUlcaYKJnQjTkmnDA==}
+    engines: {node: '>=8.10.0'}
+    dev: true
+
+  /@html-eslint/parser/0.15.0:
+    resolution: {integrity: sha512-fA+HQtWnODhOIK6j1p4XWqltINx7hM0WNNTM2RvlH/2glzeRDCcYq3vEmeQhnytvGocidu4ofTzNk80cLnnyiw==}
+    engines: {node: '>=8.10.0'}
+    dependencies:
+      es-html-parser: 0.0.8
     dev: true
 
   /@humanwhocodes/config-array/0.11.6:
@@ -876,6 +892,10 @@ packages:
       string.prototype.trimend: 1.0.5
       string.prototype.trimstart: 1.0.5
       unbox-primitive: 1.0.2
+    dev: true
+
+  /es-html-parser/0.0.8:
+    resolution: {integrity: sha512-kjMH23xhvTBw/7Ve1Dtb/7yZdFajfvwOpdsgRHmnyt8yvTsDJnkFjUgEEaMZFW+e1OhN/eoZrvF9wehq+waTGg==}
     dev: true
 
   /es-shim-unscopables/1.0.0:

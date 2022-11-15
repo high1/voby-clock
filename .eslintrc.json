@@ -15,8 +15,7 @@
         "plugin:prettier/recommended"
       ],
       "env": {
-        "browser": true,
-        "node": true
+        "browser": true
       },
       "parserOptions": {
         "sourceType": "module",
@@ -35,16 +34,29 @@
     },
     {
       "files": ["*.json"],
+      "excludedFiles": [".eslintrc.json"],
       "extends": [
-        "eslint:recommended",
         "plugin:jsonc/recommended-with-json",
         "plugin:jsonc/prettier",
         "plugin:prettier/recommended"
       ]
     },
     {
-      "files": ["*.toml"],
-      "extends": ["eslint:recommended", "plugin:toml/standard"]
+      "files": [".eslintrc.json"],
+      "extends": [
+        "plugin:jsonc/recommended-with-jsonc",
+        "plugin:jsonc/prettier",
+        "plugin:prettier/recommended"
+      ]
+    },
+    {
+      "files": ["*.html"],
+      "plugins": ["@html-eslint"],
+      "parser": "@html-eslint/parser",
+      "extends": ["plugin:@html-eslint/recommended"],
+      "rules": {
+        "@html-eslint/indent": ["error", 2]
+      }
     }
   ]
 }
