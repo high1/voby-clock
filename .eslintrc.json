@@ -9,6 +9,7 @@
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:@typescript-eslint/strict",
         "plugin:jsx-a11y/recommended",
         "plugin:import/recommended",
         "plugin:import/typescript",
@@ -34,7 +35,7 @@
     },
     {
       "files": ["*.json"],
-      "excludedFiles": [".eslintrc.json"],
+      "excludedFiles": ["{.eslintrc,tsconfig}.json"],
       "extends": [
         "plugin:jsonc/recommended-with-json",
         "plugin:jsonc/prettier",
@@ -42,21 +43,13 @@
       ]
     },
     {
-      "files": [".eslintrc.json"],
+      // jsonc
+      "files": ["{.eslintrc,tsconfig}.json"],
       "extends": [
         "plugin:jsonc/recommended-with-jsonc",
         "plugin:jsonc/prettier",
         "plugin:prettier/recommended"
       ]
-    },
-    {
-      "files": ["*.html"],
-      "plugins": ["@html-eslint"],
-      "parser": "@html-eslint/parser",
-      "extends": ["plugin:@html-eslint/recommended"],
-      "rules": {
-        "@html-eslint/indent": ["error", 2]
-      }
     }
   ]
 }

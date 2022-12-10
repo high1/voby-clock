@@ -1,4 +1,5 @@
 {
+  // jsonc
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
