@@ -4,8 +4,6 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default ({ mode }: ConfigEnv) =>
   defineConfig({
-    base: loadEnv(mode, process.cwd(), '')['BASE'],
-    build: { commonjsOptions: { include: [] } },
-    optimizeDeps: { disabled: false },
+    base: loadEnv(mode, process.cwd(), '')['BASE'] ?? '',
     plugins: [uno(), tsconfigPaths()],
   });
