@@ -25,20 +25,20 @@ export const ClockFace = () => {
             class="stroke-neutral-900 @dark:stroke-neutral-100 fill-none"
             r="99"
           />
-          {Array.from({ length }, (_, index) => ({
-            isHour: index % 5 === 0,
-          })).map(({ isHour }, index) => (
-            <ClockHand
-              transform={rotate(index / length, 0)}
-              class={
-                isHour
-                  ? 'stroke-neutral-800 @dark:stroke-neutral-200 stroke-width-2'
-                  : 'stroke-neutral-400 @dark:stroke-neutral-600'
-              }
-              length={isHour ? 7 : 3}
-              stationary
-            />
-          ))}
+          {Array.from({ length }, (_, index) => index % 5 === 0).map(
+            (isHour, index) => (
+              <ClockHand
+                transform={rotate(index / length, 0)}
+                class={
+                  isHour
+                    ? 'stroke-neutral-800 @dark:stroke-neutral-200 stroke-width-2'
+                    : 'stroke-neutral-400 @dark:stroke-neutral-600'
+                }
+                length={isHour ? 7 : 3}
+                stationary
+              />
+            )
+          )}
         </g>
         <g class="translate-100px">
           <ClockHand

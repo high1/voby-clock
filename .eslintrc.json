@@ -4,7 +4,6 @@
   "overrides": [
     {
       "files": ["*.{ts,tsx}"],
-      "parser": "@typescript-eslint/parser",
       "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
@@ -15,9 +14,6 @@
         "plugin:import/typescript",
         "plugin:prettier/recommended"
       ],
-      "env": {
-        "browser": true
-      },
       "parserOptions": {
         "sourceType": "module",
         "project": "tsconfig.json",
