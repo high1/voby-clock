@@ -18,10 +18,10 @@ specifiers:
   unocss: 0.50.4
   vite: 4.1.4
   vite-tsconfig-paths: 4.0.5
-  voby: 0.46.1
+  voby: 0.46.2
 
 dependencies:
-  voby: 0.46.1
+  voby: 0.46.2
 
 devDependencies:
   '@types/node': 18.15.0
@@ -2805,8 +2805,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /voby/0.46.1:
-    resolution: {integrity: sha512-+vxUExl3fp2gXHBcDypmFUsWKlHFneuKLDFx/1+AYsj1GTuGXWwFovJX+FKoQBsPv8xvnFmUl82ZqfrD14TO+Q==}
+  /voby/0.46.2:
+    resolution: {integrity: sha512-4YZu2mFAAodZHdPehOBEPImK0WCZgHDnfcNBQmseiFxcSTnFlZ5HHaxDtxRqsUpIwff95RgqakW9f6j5ikYXwA==}
     dependencies:
       htm: 3.1.1
       oby: 12.6.1
