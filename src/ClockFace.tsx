@@ -1,9 +1,10 @@
-import { $, useAnimationLoop } from 'voby';
+import { $, hmr, useAnimationLoop } from 'voby';
 import { ClockHand } from 'ClockHand';
+import type { ModuleNamespace } from 'vite/types/hot';
 
 const length = 60;
 
-export const ClockFace = () => {
+const ClockFace = () => {
   const getSecondsSinceMidnight = () =>
     (Date.now() - new Date().setHours(0, 0, 0, 0)) / 1000;
   const time = $(getSecondsSinceMidnight());
@@ -18,11 +19,11 @@ export const ClockFace = () => {
   useAnimationLoop(() => time(getSecondsSinceMidnight()));
 
   return (
-    <div class="grid place-content-center h-screen @dark:bg-neutral-700">
+    <div class="grid h-screen place-content-center @dark:bg-neutral-700">
       <svg viewBox="0 0 200 200" class="h-95vmin">
         <g class="translate-1/2">
           <circle
-            class="stroke-neutral-600 @dark:stroke-neutral-200 fill-none"
+            class="fill-none stroke-neutral-600 @dark:stroke-neutral-200"
             r="98"
           />
           {Array.from({ length }, (_, index) => index % 5 === 0).map(
@@ -31,10 +32,10 @@ export const ClockFace = () => {
                 transform={rotate(index / length, 0)}
                 class={
                   isHour
-                    ? 'stroke-2 stroke-neutral-600 @dark:stroke-neutral-200'
+                    ? 'stroke-neutral-600 stroke-2 @dark:stroke-neutral-200'
                     : 'stroke-neutral-200 @dark:stroke-neutral-600'
                 }
-                length={isHour ? 6 : 3}
+                length={isHour ? 6 : 2.5}
                 stationary
               />
             )
@@ -43,22 +44,22 @@ export const ClockFace = () => {
         <g class="translate-1/2">
           <ClockHand
             transform={subsecond}
-            class="stroke-4 stroke-neutral-200 @dark:stroke-neutral-600"
+            class="stroke-neutral-200 stroke-4 @dark:stroke-neutral-600"
             length={82}
           />
           <ClockHand
             transform={hour}
-            class="stroke-4 stroke-neutral-600 @dark:stroke-neutral-200"
+            class="stroke-neutral-600 stroke-4 @dark:stroke-neutral-200"
             length={46}
           />
           <ClockHand
             transform={minute}
-            class="stroke-3 stroke-neutral-400"
+            class="stroke-neutral-400 stroke-3"
             length={64}
           />
           <ClockHand
             transform={second}
-            class="stroke-2 stroke-red-500"
+            class="stroke-#ffcb3d stroke-2"
             length={76}
           />
         </g>
@@ -66,3 +67,9 @@ export const ClockFace = () => {
     </div>
   );
 };
+
+export default hmr(
+  (cb: (mod: ModuleNamespace | undefined) => void) =>
+    import.meta.hot?.accept(cb),
+  ClockFace
+);
