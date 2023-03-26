@@ -1,6 +1,5 @@
 import { $, hmr, useAnimationLoop } from 'voby';
 import { ClockHand } from 'ClockHand';
-import type { ModuleNamespace } from 'vite/types/hot';
 
 const length = 60;
 
@@ -69,7 +68,6 @@ const ClockFace = () => {
 };
 
 export default hmr(
-  (cb: (mod: ModuleNamespace | undefined) => void) =>
-    import.meta.hot?.accept(cb),
+  (cb: (mod: unknown) => void) => import.meta.hot?.accept(cb),
   ClockFace
 );
