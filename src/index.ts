@@ -1,5 +1,8 @@
 import 'uno.css';
-import { render } from 'voby';
-import ClockFace from 'ClockFace';
+import { hmr, render } from 'voby';
+import { ClockFace } from 'ClockFace';
 
-render(ClockFace, document.querySelector('#root'));
+render(
+  hmr((cb: (mod: unknown) => void) => import.meta.hot?.accept(cb), ClockFace),
+  document.querySelector('#root')
+);
