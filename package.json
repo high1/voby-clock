@@ -34,5 +34,5 @@
     "preview": "vite preview",
     "start": "vite"
   },
-  "packageManager": "pnpm@7.30.3"
+  "packageManager": "pnpm@8.1.0"
 }
