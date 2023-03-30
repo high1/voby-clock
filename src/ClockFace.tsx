@@ -1,9 +1,9 @@
-import { $, hmr, useAnimationLoop } from 'voby';
+import { $, useAnimationLoop } from 'voby';
 import { ClockHand } from 'ClockHand';
 
 const length = 60;
 
-const ClockFace = () => {
+export const ClockFace = () => {
   const getSecondsSinceMidnight = () =>
     (Date.now() - new Date().setHours(0, 0, 0, 0)) / 1000;
   const time = $(getSecondsSinceMidnight());
@@ -66,8 +66,3 @@ const ClockFace = () => {
     </div>
   );
 };
-
-export default hmr(
-  (cb: (mod: unknown) => void) => import.meta.hot?.accept(cb),
-  ClockFace
-);
