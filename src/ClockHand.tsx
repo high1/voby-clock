@@ -1,8 +1,8 @@
-type ClockHandProps = {
+type ClockHandProps = JSX.SVGAttributes<SVGLineElement> & {
   length: number;
   limit?: number;
   stationary?: boolean;
-} & JSX.SVGAttributes<SVGLineElement>;
+};
 
 export const ClockHand = ({
   length,

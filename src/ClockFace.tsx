@@ -25,7 +25,7 @@ export const ClockFace = () => {
             class="fill-none stroke-neutral-600 @dark:stroke-neutral-200"
             r="98"
           />
-          {Array.from({ length }, (_, index) => index % 5 === 0).map(
+          {Array.from({ length }, (_, index) => !(index % 5)).map(
             (isHour, index) => (
               <ClockHand
                 transform={rotate(index / length, 0)}
@@ -43,22 +43,22 @@ export const ClockFace = () => {
         <g class="translate-1/2">
           <ClockHand
             transform={subsecond}
-            class="stroke-neutral-200 stroke-4 @dark:stroke-neutral-600"
+            class="stroke-neutral-200 @dark:stroke-neutral-600 stroke-3"
             length={82}
           />
           <ClockHand
             transform={hour}
-            class="stroke-neutral-600 stroke-4 @dark:stroke-neutral-200"
+            class="stroke-neutral-600 @dark:stroke-neutral-200 stroke-4"
             length={46}
           />
           <ClockHand
             transform={minute}
-            class="stroke-neutral-400 stroke-3"
+            class="stroke-3 stroke-neutral-400"
             length={64}
           />
           <ClockHand
             transform={second}
-            class="stroke-#ffcb3d stroke-2"
+            class="stroke-2 stroke-voby"
             length={76}
           />
         </g>
