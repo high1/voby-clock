@@ -58,7 +58,7 @@ export const ClockFace = () => {
           />
           <ClockHand
             transform={second}
-            class="stroke-2 stroke-blue"
+            class="stroke-2 stroke-voby"
             length={76}
           />
         </g>
