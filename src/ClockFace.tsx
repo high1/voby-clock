@@ -37,7 +37,7 @@ export const ClockFace = () => {
                 length={isHour ? 6 : 2.5}
                 stationary
               />
-            )
+            ),
           )}
         </g>
         <g class="translate-1/2">
