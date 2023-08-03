@@ -8,7 +8,7 @@ on:
       - main
 
 env:
-  BASE: /${{ github.event.repository.name }}/
+  BASE: ${{ github.event.repository.name }}
 
 jobs:
   build-and-deploy:
@@ -27,7 +27,7 @@ jobs:
           node-version: latest
           cache: pnpm
 
-      - name: Install 🔧
+      - name: Install && Build 🔧
         run: |
           pnpm i --frozen-lockfile
           pnpm build
@@ -35,6 +35,6 @@ jobs:
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.3
-        if: github.ref == 'refs/heads/main'
+        if: github.ref_name == 'main'
         with:
           folder: dist
