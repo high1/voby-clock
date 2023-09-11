@@ -1,7 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "timezone": "Europe/Belgrade",
-  "extends": ["config:base", "schedule:weekly"],
+  "extends": ["config:recommended"],
+  "schedule": ["before 4am on Wednesday"],
   "packageRules": [
     {
       "matchPackagePatterns": ["*"],
