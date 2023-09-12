@@ -27,7 +27,7 @@
     "voby-vite": "1.2.3"
   },
   "dependencies": {
-    "voby": "0.56.0"
+    "voby": "0.56.1"
   },
   "scripts": {
     "build": "vite build",

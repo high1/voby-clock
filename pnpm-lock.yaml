@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   voby:
-    specifier: 0.56.0
-    version: 0.56.0
+    specifier: 0.56.1
+    version: 0.56.1
 
 devDependencies:
   '@types/node':
@@ -3134,8 +3134,8 @@ packages:
     resolution: {integrity: sha512-ZCEXh3Nmv7aG3yyEWhdbfd6GwwPORSgranEUETbcjJofQLk0NQWlNdZt9gkSV5hkxG14mxFxOTWx0zLeynzeCQ==}
     dev: true
 
-  /voby@0.56.0:
-    resolution: {integrity: sha512-C5aVsP1p+4PdTOFlFjS07kargN9ik/euJ+l/C2NZqJQRtEGPP5zd92vNqfoCKMaV9QkzvE/tVYOu6rwL2kIgOA==}
+  /voby@0.56.1:
+    resolution: {integrity: sha512-yilrD1jbMKvD+UWxmFDMmbdqR0kY53awh5RBGc0qSuaqdVPcp1lD90ZkgTX+fHlJZ9zSf3zV9NAQNGPC3OsKkA==}
     dependencies:
       htm: 3.1.1
       oby: 14.3.1
