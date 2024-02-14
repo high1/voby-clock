@@ -6,7 +6,7 @@
   "keywords": [],
   "description": "voby clock, inspired by sauron clock",
   "devDependencies": {
-    "@types/node": "20.11.16",
+    "@types/node": "20.11.17",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
     "@unocss/eslint-config": "0.58.5",
@@ -27,7 +27,7 @@
     "voby-vite": "1.2.4"
   },
   "dependencies": {
-    "voby": "0.57.3"
+    "voby": "0.57.4"
   },
   "scripts": {
     "build": "vite build",
@@ -35,5 +35,5 @@
     "preview": "vite preview",
     "start": "vite"
   },
-  "packageManager": "pnpm@8.15.1"
+  "packageManager": "pnpm@8.15.2"
 }
