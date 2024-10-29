@@ -6,7 +6,7 @@
   "keywords": [],
   "description": "voby clock, inspired by sauron clock",
   "devDependencies": {
-    "@types/node": "20.16.15",
+    "@types/node": "20.17.3",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
     "@unocss/eslint-config": "0.63.6",
@@ -15,7 +15,7 @@
     "eslint-import-resolver-typescript": "3.6.3",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-jsonc": "2.16.0",
-    "eslint-plugin-jsx-a11y": "6.10.1",
+    "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-prettier": "5.2.1",
     "eslint-plugin-yml": "1.14.0",
     "prettier": "3.3.3",
