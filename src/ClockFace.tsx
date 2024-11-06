@@ -1,7 +1,8 @@
 import { $, useAnimationLoop } from 'voby';
 import { ClockHand } from 'ClockHand';
 
-const length = 60;
+const base = 60;
+const long = base / 5;
 
 export const ClockFace = () => {
   const getSecondsSinceMidnight = () =>
@@ -11,28 +12,29 @@ export const ClockFace = () => {
   const rotate = (rotate: number, fractionDigits = 1) =>
     `rotate(${(rotate * 360).toFixed(fractionDigits)})`;
   const subsecond = () => rotate(time() % 1, 0);
-  const second = () => rotate((time() % 60) / 60);
-  const minute = () => rotate(((time() / 60) % 60) / 60);
-  const hour = () => rotate(((time() / 60 / 60) % 12) / 12);
+  const second = () => rotate((time() % base) / base);
+  const minute = () => rotate(((time() / base) % base) / base);
+  const hour = () => rotate(((time() / base ** 2) % long) / long);
 
   useAnimationLoop(() => time(getSecondsSinceMidnight()));
 
   return (
-    <div class="grid h-screen place-content-center @dark:bg-gray-800">
-      <svg viewBox="0 0 200 200" class="h-95vmin">
+    <div class="grid h-screen place-content-center dark:bg-zinc-800">
+      <svg viewBox="0 0 200 200" class="h-[95vmin]">
         <g class="translate-1/2">
           <circle
-            class="fill-none stroke-gray-600 @dark:stroke-gray-200"
+            class="stroke-zinc-600 dark:stroke-zinc-200"
+            fill="none"
             r="98"
           />
-          {Array.from({ length }, (_, index) => !(index % 5)).map(
+          {Array.from({ length: base }, (_, index) => !(index % 5)).map(
             (isHour, index) => (
               <ClockHand
-                transform={rotate(index / length, 0)}
+                transform={rotate(index / base, 0)}
                 class={
                   isHour
-                    ? 'stroke-gray-600 stroke-2 @dark:stroke-gray-200'
-                    : 'stroke-gray-200 @dark:stroke-gray-600'
+                    ? 'stroke-zinc-600 stroke-2 dark:stroke-zinc-200'
+                    : 'stroke-zinc-200 dark:stroke-zinc-600'
                 }
                 length={isHour ? 6 : 2.5}
                 stationary
@@ -43,17 +45,17 @@ export const ClockFace = () => {
         <g class="translate-1/2">
           <ClockHand
             transform={subsecond}
-            class="stroke-3 stroke-gray-200 @dark:stroke-gray-600"
+            class="stroke-3 stroke-zinc-200 dark:stroke-zinc-600"
             length={82}
           />
           <ClockHand
             transform={hour}
-            class="stroke-gray-600 @dark:stroke-gray-200 stroke-4"
+            class="stroke-zinc-600 dark:stroke-zinc-200 stroke-4"
             length={46}
           />
           <ClockHand
             transform={minute}
-            class="stroke-3 stroke-gray-400"
+            class="stroke-3 stroke-zinc-400"
             length={64}
           />
           <ClockHand
