@@ -8,7 +8,7 @@
   "devDependencies": {
     "@tailwindcss/vite": "4.1.12",
     "@types/eslint-plugin-jsx-a11y": "6.10.0",
-    "@types/node": "22.18.0",
+    "@types/node": "24.10.9",
     "eslint": "9.34.0",
     "eslint-config-prettier": "9.1.2",
     "eslint-import-resolver-typescript": "3.10.1",
