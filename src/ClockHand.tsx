@@ -1,19 +1,19 @@
 type ClockHandProps = JSX.SVGAttributes<SVGLineElement> & {
+  graduation?: true;
   length: number;
   limit?: number;
-  stationary?: boolean;
 };
 
 export const ClockHand = ({
+  graduation,
   length,
   limit = 94,
-  stationary,
   ...rest
 }: ClockHandProps) => (
   <line
-    y1={stationary ? length - limit : undefined}
-    y2={-(stationary ? limit : length)}
     strokeLinecap="round"
+    y1={graduation && length - limit}
+    y2={-(graduation ? limit : length)}
     {...rest}
   />
 );
