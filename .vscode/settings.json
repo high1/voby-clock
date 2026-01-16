@@ -2,8 +2,15 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "eslint.validate": ["json", "jsonc", "yaml"],
-  "files.associations": {
-    "*.css": "tailwindcss"
-  }
+  "eslint.validate": [
+    "css",
+    "html",
+    "javascript",
+    "json",
+    "jsonc",
+    "typescript",
+    "typescriptreact",
+    "yaml"
+  ],
+  "css.customData": ["./.vscode/tailwind.json"]
 }
