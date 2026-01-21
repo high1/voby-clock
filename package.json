@@ -27,7 +27,7 @@
     "prettier-plugin-tailwindcss": "0.7.2",
     "tailwindcss": "4.1.18",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.53.0",
+    "typescript-eslint": "8.53.1",
     "vite": "8.0.0-beta.8",
     "vite-plugin-checker": "0.12.0",
     "vite-tsconfig-paths": "6.0.4",
@@ -42,7 +42,7 @@
     "preview": "vite preview",
     "start": "vite"
   },
-  "packageManager": "pnpm@10.28.0",
+  "packageManager": "pnpm@10.28.1",
   "engines": {
     "node": ">=24"
   },
