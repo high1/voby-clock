@@ -16,13 +16,13 @@ jobs:
 
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v6.0.2
+        uses: actions/checkout@v6.1.0
 
       - name: Pnpm 🧱
-        uses: pnpm/action-setup@v4.2.0
+        uses: pnpm/action-setup@v4.4.0
 
       - name: Node.js ⚓
-        uses: actions/setup-node@v6.3.0
+        uses: actions/setup-node@v6.5.0
         with:
           node-version: latest
           cache: pnpm
@@ -37,7 +37,7 @@ jobs:
           touch dist/.nojekyll
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.8.0
+        uses: JamesIves/github-pages-deploy-action@v4.9.0
         if: github.ref == 'refs/heads/main'
         with:
           folder: dist
